@@ -1,0 +1,31 @@
+// html,
+// body {
+//   padding: 0;
+//   margin: 0;
+//   height: 100%;
+//   width: 100%;
+//   position: fixed;
+
+//   #__next{
+//     height: 100%;
+//     width: 100%;
+//   }
+// }
+
+
+@import './signin.scss';
+@import '../components/Input/Input.scss';
+@import '../components/Button/Button.scss';
+@import '../components/AppointmentBook/AppointmentBook.scss';
+@import '../components/Appointments/Appointments.scss';
+@import '../components/AdminSetting/AdminSetting.scss';
+@import '../screens//setting/setting.scss';
+@import '../components/GoogleCalnder/index.scss';
+@import '../pages/dashboard/dashboard.scss';
+@import 'react-big-calendar/lib/sass/styles';
+@import '../pages/privacypolicy/privacypolicy.scss';
+
+
+@import 'react-date-range/dist/styles.css'; // main style file
+@import 'react-date-range/dist/theme/default.css'; // theme css file
+@import 'react-datepicker/dist/react-datepicker.css';

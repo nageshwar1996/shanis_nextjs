@@ -1,0 +1,14 @@
+.calnder{
+    width: 100%;
+
+    .rbc-calendar{
+        min-width: 800px;
+        min-height: 600px;
+    }
+    @media (max-width: 765px) {
+        .rbc-calendar{
+            min-width: 386px;
+            min-height: 420px;
+        }
+    }
+}

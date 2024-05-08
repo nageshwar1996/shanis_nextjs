@@ -1,0 +1,49 @@
+.setting_page {
+  margin-top: 40px;
+  // height: 600px;
+  min-width: 600px;
+  background: linear-gradient(62deg, #e69670, rgba(159, 111, 79, 0.1098039216));
+  border-radius: 12px;
+  filter: drop-shadow(1px 4px 6px #e69670);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .fields {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+
+    .row {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      gap: 20px;
+    }
+    .forget-pass {
+      height: 20px;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+      p {
+        color: #0000ff9b;
+      }
+    }
+  }
+  .row-text {
+    display: flex;
+    justify-content: center;
+    .link {
+      color: #0000ff;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 765px) {
+    min-width: 92%;
+    // width: 100%;
+  }
+}

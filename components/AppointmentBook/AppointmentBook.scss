@@ -1,0 +1,67 @@
+.appo_book_form {
+  // position: absolute;
+  // top: 16vh;
+  // left: 20vw;
+
+  position: absolute;
+  top: 50px;
+
+  margin-top: 40px;
+  height: 600px;
+  min-width: 600px;
+  background: linear-gradient(62deg, #e69670, rgba(159, 111, 79, 0.1098039216));
+  border-radius: 12px;
+  filter: drop-shadow(1px 4px 6px #e69670);
+  padding: 16px;
+
+  .fields {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    .title {
+    }
+    .cross {
+      position: absolute;
+      align-self: flex-end;
+      border: 1px solid red;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      justify-content: center;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .row {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      gap: 20px;
+
+      .react-datepicker-wrapper{
+        width: 100%;
+        input {
+          width: 100%;
+          height: 32px;
+          outline: none;
+          border: none;
+          border-radius: 4px;
+          padding: 0px;
+          // padding-left: 14px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  @media ((max-width: 765px)) {
+    min-height: 100%;
+    min-width: unset;
+    width: -webkit-fill-available;
+  }
+}

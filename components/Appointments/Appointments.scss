@@ -1,0 +1,145 @@
+.appointments {
+  margin-top: 40px;
+  // height: 600px;
+  min-width: 600px;
+  background: linear-gradient(62deg, #e69670, rgba(159, 111, 79, 0.1098039216));
+  border-radius: 12px;
+  filter: drop-shadow(1px 4px 6px #e69670);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+
+  .create_appointment {
+    position: absolute;
+    right: 10px;
+    top: -34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid #e28b65;
+    padding: 4px 6px;
+    border-radius: 8px;
+
+
+    img{
+      width: 18px;
+      height: 18px;
+    }
+    span{
+      color: red;
+      font-size: 14px;
+      font-style: italic;
+    }
+    
+  }
+
+  .appointment {
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 6px 10px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    .avatar {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      cursor: pointer;
+      img {
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;
+      }
+    }
+    .src_img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+    .meet{
+        border: 1px solid #40A2E3;
+        border-radius: 8px;
+        padding: 8px;
+        background-color: #40A2E3;
+        cursor: pointer;;
+    }
+
+    
+    
+  }
+
+
+  @media (max-width: 765px){
+    width: 96%;
+    min-height: 100%;
+    min-width: unset;
+    gap: 8px;
+    padding: 8px;
+    position: relative;
+
+    .appointment{
+      gap: 8px;
+      height: 46px;
+      padding: 4px 4px;
+      span {
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      a{
+        font-size: 10px;
+      }
+      .avatar {
+        height: 32px;
+        width: 32px;
+        img {
+          height: 32px;
+          width: 32px;
+        }
+      }
+      .src_img {
+        width: 14px;
+        height: 14px;
+      }
+      .meet{
+        padding: 2px;
+        border-radius: 4px;
+        text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+
+
+  .Approved{
+    border: 1px solid green;
+    padding: 2px 4px;
+    border-radius: 6px;
+    color: green;
+    background: #00800030;
+  }
+  .Pending{
+    border: 1px solid gray;
+    padding: 2px 4px;
+    border-radius: 6px;
+    color: gray;
+    background: #80808029;
+  }
+  .Rejected {
+    border: 1px solid red;
+    padding: 2px 4px;
+    border-radius: 6px;
+    color: red;
+    background: #ff000024;
+  }
+}

@@ -1,0 +1,57 @@
+.signin-page {
+  .signin-bg img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .signin-form {
+    position: absolute;
+    top: 16vh;
+    left: 20vw;
+    height: 600px;
+    width: 500px;
+    background: linear-gradient(62deg, #e69670, #9f6f4f1c);
+    border-radius: 12px;
+    filter: drop-shadow(1px 4px 6px #e69670);
+    padding: 16px;
+
+    .fields {
+      height: auto;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 24px;
+
+      .row {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        gap:20px;
+      }
+      .forget-pass{
+        height: 20px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction:row-reverse;
+        p{
+          color: #0000ff9b;
+        }
+      }
+    }
+    .row-text{
+      display: flex;
+      justify-content: center;
+      .link{
+        color:#0000ff;
+        cursor: pointer;
+      }
+    }
+
+    @media (max-width: 765px)  {
+      left: 0vw;
+      width: 92%;
+      top: 6vh;
+      height: 560px;
+    }
+  }
+}
