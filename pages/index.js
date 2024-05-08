@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Image from "next/image";
 
 export default function Home() {
   useEffect(() => {
@@ -46,8 +45,7 @@ export default function Home() {
           </p>
         </div>
         <div className="img-block">
-          <img src="/images/mobilebnr-img.png" alt="" />
-          <Image src="/images/mobilebnr-img.png" height={300} width={300} quality={100}/>
+          <img src="../public/images/images/mobilebnr-img.png" alt="" />
         </div>
         <ul className="social">
           <li>
