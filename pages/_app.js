@@ -1,10 +1,9 @@
-import { createClient } from "@supabase/supabase-js";
-import "../styles/main.scss";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { createClient } from "@supabase/supabase-js";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // import 'antd/dist/antd.css'
 // Create a single supabase client for interacting with your database
 export const supabase = createClient(
@@ -12,10 +11,10 @@ export const supabase = createClient(
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ3dWhqY3RsY2Rtcm1laXhiaW1zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDYwMzMwNjEsImV4cCI6MjAyMTYwOTA2MX0.NvbJChgwidz3CsxP-ACZJF0ldHLusxGms33RWS5Jf8c"
 );
 import Head from "next/head";
-
 import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from "../store/store";
 import { Provider } from "react-redux";
+import "../styles/main.scss";
 import "../styles/landing.css";
 
 const MyApp = ({ Component, pageProps }) => {
