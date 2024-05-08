@@ -1,7 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 import "../styles/main.scss";
 import { ToastContainer } from "react-toastify";
-// import AOS from "aos";
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
@@ -18,19 +17,16 @@ import Head from "next/head";
 import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from "../store/store";
 import { Provider } from "react-redux";
-import { useEffect } from "react";
 
 const MyApp = ({ Component, pageProps }) => {
-  // useEffect(() => {
-  //   AOS.init();
-  // }, []);
+ 
   return (
     <>
       <Head>
-        {/* <meta
+        <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
-        /> */}
+        />
         <title>Shanis</title>
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
