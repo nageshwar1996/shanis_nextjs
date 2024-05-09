@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import Slider from "react-slick";
+import Link from "next/link";
+import $ from "jquery";
 import "aos/dist/aos.css";
 
 export default function Home() {
@@ -10,8 +12,6 @@ export default function Home() {
     slidesToScroll: 1,
     dots: false,
     arrows: false,
-    //prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa-solid fa-chevron-left"></i></button>',
-    //nextArrow: '<button class="slide-arrow next-arrow"><i class="fa-solid fa-chevron-right"></i></button>',
     responsive: [
       {
         breakpoint: 1200,
@@ -41,6 +41,24 @@ export default function Home() {
     AOS.init({
       once: true,
     });
+
+    // Menu Schroll To top
+    $(document).on("click", 'a[href^="#"]', function (event) {
+      event.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: $($.attr(this, "href")).offset().top - 20,
+        },
+        300
+      );
+    });
+  }, []);
+
+  useEffect(() => {
+    document.body.classList.add("home-page");
+    return () => {
+      document.body.classList.remove("home-page");
+    };
   }, []);
   return (
     <>
@@ -49,22 +67,22 @@ export default function Home() {
         <div className="container">
           <ul>
             <li>
-              <a href="#">BIOGRAPHY </a>
+              <a href="#sh_biography">BIOGRAPHY </a>
             </li>
             <li>
-              <a href="#">DISCOGRAPHY</a>
+              <a href="#sh_discography">DISCOGRAPHY</a>
             </li>
             <li>
-              <a href="#">SCHOOL</a>
+              <a href="javascript:void(0)">SCHOOL</a>
             </li>
             <li>
-              <a href="#">SIGNIN</a>
+              <Link href="/signin">SIGNIN</Link>
             </li>
             <li>
-              <a href="#">SERVICE</a>
+              <Link href="/service">SERVICE</Link>
             </li>
             <li>
-              <a href="#">PRIVACY POLICY</a>
+              <Link href="/privacypolicy">PRIVACY POLICY</Link>
             </li>
           </ul>
         </div>
@@ -115,7 +133,7 @@ export default function Home() {
         </ul>
       </div>
       {/* Biohraphy Start */}
-      <div className="biography">
+      <div className="biography" id="sh_biography">
         <div className="title" data-aos="fade-up" data-aos-duration={1500}>
           <div className="container">
             <h2>Biography</h2>
@@ -371,7 +389,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="discography">
+      <div className="discography" id="sh_discography">
         <div className="container">
           <div className="title" data-aos="fade-up" data-aos-duration={1500}>
             <h2>Discography</h2>
@@ -553,27 +571,27 @@ export default function Home() {
             <h3>Let’s create something great together!</h3>
             <ul className="social">
               <li>
-                <a href="#">
+                <a href="https://music.apple.com/us/album/vechorie-single/1694237261">
                   <i className="fa-solid fa-music" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://open.spotify.com/track/73hqtKDw0CeZ5nRRFRfSyY?si=lDs--frBQqmLDQFLLsLqeA&nd=1">
                   <i className="fa-brands fa-spotify" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/olga.shanis?mibextid=ZbWKwL">
                   <i className="fa-brands fa-facebook" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/missshanis/?igshid=MzNlNGNkZWQ4Mg%3D%3D">
                   <i className="fa-brands fa-instagram" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.youtube.com/@missshanis">
                   <i className="fa-brands fa-youtube" />
                 </a>
               </li>
