@@ -479,6 +479,7 @@ th {
   color: var(--secondiary);
   display: block;
 }
+.table-responsive table tr, td, th{ background:transparent !important; color:var(--theme) !important; }
 
 /*==== RESPONSIVE START FROM HERE ====*/
 @media screen and (max-width: 1365px) {
@@ -570,24 +571,6 @@ th {
   .banner p {
     width: 75%;
   }
-
-  .banner ul.social {
-    display: block;
-    text-align: center;
-    margin-top: 50px;
-  }
-  .banner ul li {
-    font-size: 26px;
-    display: inline-block;
-  }
-  .banner ul li a {
-    color: var(--theme);
-    margin-right: 25px;
-  }
-  .banner ul li:last-child a {
-    margin-right: 0;
-  }
-
   .biography {
     margin: 30px 0 70px;
   }
@@ -739,4 +722,25 @@ th {
   p {
     font-size: 18px;
   }
+
+.biography .inn{ overflow-x:hidden; }
+.year_timeline .container{ overflow-x:hidden; }
+.discography .container{ overflow-x:hidden; }
+
+.banner ul.social {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+.banner ul.social li {
+  font-size: 26px;
+  display: inline-block;
+}
+.banner ul.social li a {
+  color: var(--theme);
+  margin-right: 25px;
+}
+.banner ul.social li:last-child a {
+  margin-right: 0;
+}
 }
