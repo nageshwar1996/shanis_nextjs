@@ -596,7 +596,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.tiktok.com/@msshanis?_t=8cyK7dx6Poc&_r=1">
                   <i className="fa-brands fa-tiktok" />
                 </a>
               </li>

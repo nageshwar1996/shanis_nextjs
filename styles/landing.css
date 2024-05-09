@@ -10,7 +10,7 @@ body.home-page {
   background: #fff5ed;
   margin: 0;
   padding: 0;
-  overflow: auto !important;
+  position: relative;
   overflow-x: hidden !important;
 }
 ul,
