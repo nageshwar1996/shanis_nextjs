@@ -12,8 +12,11 @@ import "../styles/landing.css";
 export default function Home() {
   const footerBanner = {
     autoplay: true,
+    infinite: true,
     slidesToShow: 7,
+    swipeToSlide: true,
     slidesToScroll: 1,
+    cssEase: "ease-out",
     dots: false,
     arrows: false,
     responsive: [
@@ -666,8 +669,8 @@ export default function Home() {
           </div>
           <div
             className="mail-wrap text-center"
-            // data-aos="fade-up"
-            // data-aos-duration={1500}
+            data-aos="fade-up"
+            data-aos-duration={1500}
           >
             <a href="mailto:prettymissshanis@gmail.com">
               prettymissshanis@gmail.com

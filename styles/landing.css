@@ -743,4 +743,5 @@ th {
 .banner ul.social li:last-child a {
   margin-right: 0;
 }
+.table-responsive table.table{ white-space:nowrap; }
 }
