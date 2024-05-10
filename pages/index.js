@@ -105,22 +105,34 @@ export default function Home() {
         </div>
         <ul className="social">
           <li>
-            <a href="https://music.apple.com/us/album/vechorie-single/1694237261" target="_blank">
+            <a
+              href="https://music.apple.com/us/album/vechorie-single/1694237261"
+              target="_blank"
+            >
               <i className="fa-solid fa-music" />
             </a>
           </li>
           <li>
-            <a href="https://open.spotify.com/track/73hqtKDw0CeZ5nRRFRfSyY?si=lDs--frBQqmLDQFLLsLqeA&nd=1" target="_blank">
+            <a
+              href="https://open.spotify.com/track/73hqtKDw0CeZ5nRRFRfSyY?si=lDs--frBQqmLDQFLLsLqeA&nd=1"
+              target="_blank"
+            >
               <i className="fa-brands fa-spotify" />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/olga.shanis?mibextid=ZbWKwL" target="_blank">
+            <a
+              href="https://www.facebook.com/olga.shanis?mibextid=ZbWKwL"
+              target="_blank"
+            >
               <i className="fa-brands fa-facebook" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/missshanis/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
+            <a
+              href="https://www.instagram.com/missshanis/?igshid=MzNlNGNkZWQ4Mg%3D%3D"
+              target="_blank"
+            >
               <i className="fa-brands fa-instagram" />
             </a>
           </li>
@@ -130,7 +142,10 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <a href="https://www.tiktok.com/@msshanis?_t=8cyK7dx6Poc&_r=1" target="_blank">
+            <a
+              href="https://www.tiktok.com/@msshanis?_t=8cyK7dx6Poc&_r=1"
+              target="_blank"
+            >
               <i className="fa-brands fa-tiktok" />
             </a>
           </li>
@@ -575,22 +590,34 @@ export default function Home() {
             <h3>Let’s create something great together!</h3>
             <ul className="social">
               <li>
-                <a href="https://music.apple.com/us/album/vechorie-single/1694237261" target="_blank">
+                <a
+                  href="https://music.apple.com/us/album/vechorie-single/1694237261"
+                  target="_blank"
+                >
                   <i className="fa-solid fa-music" />
                 </a>
               </li>
               <li>
-                <a href="https://open.spotify.com/track/73hqtKDw0CeZ5nRRFRfSyY?si=lDs--frBQqmLDQFLLsLqeA&nd=1" target="_blank">
+                <a
+                  href="https://open.spotify.com/track/73hqtKDw0CeZ5nRRFRfSyY?si=lDs--frBQqmLDQFLLsLqeA&nd=1"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-spotify" />
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/olga.shanis?mibextid=ZbWKwL" target="_blank">
+                <a
+                  href="https://www.facebook.com/olga.shanis?mibextid=ZbWKwL"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-facebook" />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/missshanis/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
+                <a
+                  href="https://www.instagram.com/missshanis/?igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-instagram" />
                 </a>
               </li>
@@ -600,7 +627,10 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="https://www.tiktok.com/@msshanis?_t=8cyK7dx6Poc&_r=1" target="_blank">
+                <a
+                  href="https://www.tiktok.com/@msshanis?_t=8cyK7dx6Poc&_r=1"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-tiktok" />
                 </a>
               </li>
@@ -636,8 +666,8 @@ export default function Home() {
           </div>
           <div
             className="mail-wrap text-center"
-            data-aos="fade-up"
-            data-aos-duration={1500}
+            // data-aos="fade-up"
+            // data-aos-duration={1500}
           >
             <a href="mailto:prettymissshanis@gmail.com">
               prettymissshanis@gmail.com
