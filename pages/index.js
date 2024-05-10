@@ -4,6 +4,10 @@ import Slider from "react-slick";
 import Link from "next/link";
 import $ from "jquery";
 import "aos/dist/aos.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../styles/landing.css";
 
 export default function Home() {
   const footerBanner = {
@@ -101,34 +105,34 @@ export default function Home() {
         </div>
         <ul className="social">
           <li>
-            <a href="#">
+            <Link href="https://music.apple.com/us/album/vechorie-single/1694237261">
               <i className="fa-solid fa-music" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="https://open.spotify.com/track/73hqtKDw0CeZ5nRRFRfSyY?si=lDs--frBQqmLDQFLLsLqeA&nd=1">
               <i className="fa-brands fa-spotify" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="https://www.facebook.com/olga.shanis?mibextid=ZbWKwL">
               <i className="fa-brands fa-facebook" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="https://www.instagram.com/missshanis/?igshid=MzNlNGNkZWQ4Mg%3D%3D">
               <i className="fa-brands fa-instagram" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="https://www.youtube.com/@missshanis">
               <i className="fa-brands fa-youtube" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link href="https://www.tiktok.com/@msshanis?_t=8cyK7dx6Poc&_r=1">
               <i className="fa-brands fa-tiktok" />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -571,34 +575,34 @@ export default function Home() {
             <h3>Let’s create something great together!</h3>
             <ul className="social">
               <li>
-                <a href="https://music.apple.com/us/album/vechorie-single/1694237261">
+                <Link href="https://music.apple.com/us/album/vechorie-single/1694237261">
                   <i className="fa-solid fa-music" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://open.spotify.com/track/73hqtKDw0CeZ5nRRFRfSyY?si=lDs--frBQqmLDQFLLsLqeA&nd=1">
+                <Link href="https://open.spotify.com/track/73hqtKDw0CeZ5nRRFRfSyY?si=lDs--frBQqmLDQFLLsLqeA&nd=1">
                   <i className="fa-brands fa-spotify" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.facebook.com/olga.shanis?mibextid=ZbWKwL">
+                <Link href="https://www.facebook.com/olga.shanis?mibextid=ZbWKwL">
                   <i className="fa-brands fa-facebook" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.instagram.com/missshanis/?igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                <Link href="https://www.instagram.com/missshanis/?igshid=MzNlNGNkZWQ4Mg%3D%3D">
                   <i className="fa-brands fa-instagram" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.youtube.com/@missshanis">
+                <Link href="https://www.youtube.com/@missshanis">
                   <i className="fa-brands fa-youtube" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.tiktok.com/@msshanis?_t=8cyK7dx6Poc&_r=1">
+                <Link href="https://www.tiktok.com/@msshanis?_t=8cyK7dx6Poc&_r=1">
                   <i className="fa-brands fa-tiktok" />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -635,7 +639,9 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-duration={1500}
           >
-            <a href="#">prettymissshanis@gmail.com</a>
+            <Link href="mailto:prettymissshanis@gmail.com">
+              prettymissshanis@gmail.com
+            </Link>
           </div>
         </div>
       </div>

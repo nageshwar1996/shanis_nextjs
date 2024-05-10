@@ -1,6 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { createClient } from "@supabase/supabase-js";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -15,7 +12,6 @@ import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from "../store/store";
 import { Provider } from "react-redux";
 import "../styles/main.scss";
-import "../styles/landing.css";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
